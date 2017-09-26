@@ -1,5 +1,10 @@
-The Minoperation class is used to find minCost path from origin string to target string 
-by addition, deletion, subsitituion, and take anagram, these four operations.
+Assignment:
+    To transform one word into another, with four operations: add, delete, change, and anagram of existing word. and follow the             following rules: 
+    - every interrim step must be a word in dictionary
+    - all word length larger than or equal to 3
+Description:
+    The Minoperation class is used to find minCost path from origin string to target string 
+    by addition, deletion, subsitituion, and take anagram, these four operations.
 
 Requirement: 
     verison: java8, since some part of method using lambda expression.
