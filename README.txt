@@ -5,6 +5,14 @@ Requirement:
     verison: java8, since some part of method using lambda expression.
     Files: all text(dictionary/instructions) file should 
     be in the same directory as the .class file
+    
+format:
+    instrution file should contain 3 lines as in the example below 
+    1 3 5 3 
+    tes
+    fun 
+    the integer in the first line corresponding to the cost for add, delete, subsitution and anagram
+    second line is the origin string and last line is the target string
 
 Complie & run: 
     in the root directory on terminal type  javac MinOperations.java 
@@ -14,10 +22,11 @@ Complie & run:
     or "exit" to quit the program
 
 
-Idea: using A* search algorithm to find the shortest path, and use
-Levenshtein distance as the heuristic funtion. A* is known for smaller 
-searching space when comparing with dijkstra algorithm(which also disregard the importance of
-Levenshtein distance) and therefore, A* has better performance when size of dictionaryList is large.
+Idea: 
+    using A* search algorithm to find the shortest path, and use
+    Levenshtein distance as the heuristic funtion. A* is known for smaller 
+    searching space when comparing with dijkstra algorithm(which also disregard the importance of
+    Levenshtein distance) and therefore, A* has better performance when size of dictionaryList is large.
 
 diffulties: To be honest, it's a really interesting and a bit challenging puzzles, 
     1. generate all anagram for each string state
@@ -45,6 +54,6 @@ potential issues:
 
 Reference:
 
-1. wordList     http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt
+1. wordList http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt
 2. A*   https://en.wikipedia.org/wiki/A*_search_algorithm
-3. Levenshtein distance     https://en.wikipedia.org/wiki/Levenshtein_distance
+3. Levenshtein distance https://en.wikipedia.org/wiki/Levenshtein_distance
