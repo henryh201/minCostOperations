@@ -126,6 +126,10 @@ public class MinOperations{
             String cur = curPair.getStr();
             String buff;
             int cost = curPair.getCost();
+            if(cur.equals(target)){
+                explored.put(target, cost);
+                return;
+            }
             if(!explored.containsKey(cur) || explored.get(cur) > cost) {
                 explored.put(cur, cost);
             }
